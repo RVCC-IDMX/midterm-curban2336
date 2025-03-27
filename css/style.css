@@ -1,10 +1,82 @@
 /* Styles for Mobile Site */
+body{
+    background-color:#191110;
+    font-family:Tektur;
+}
 
 /* Header & Hero */
+#hero,footer{
+    text-align:center;
+    background-color:#dbb355;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid #db0201;
+}
+
+#hero{
+    margin-left:3em;
+    margin-right:3em;
+}
+
+#hero div{
+    background-color:#dbb355;
+}
+
+#hero img{
+    width:300px;
+    max-width: 100%;
+    border: 5px solid #db0201;
+    background-color:#191110;
+}
+
+#hero div p{
+    font-size: 32pt;
+}
+
+h1,h2,h4,h5,h6{
+    font-size: 45pt;
+    text-align:center;
+    background-color: #dbb355;
+    padding:.3em;
+    margin-left:3em;
+    margin-right:3em;
+    line-height:1;
+    border: 3px outset #db0201;
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+}
+
+h3{
+    font-size: 20pt;
+    text-align:center;
+    color: white;
+    padding:.3em;
+    margin-left:3em;
+    margin-right:3em;
+    line-height:1;
+}
 
 /* Projects */
+#projects{
+    max-width: 100%;
+}
+
+#projects .project{
+    text-align: center;
+}
 
 /* Reviews */
+
+.review{
+    font-size: 20pt;
+    text-align:center;
+    background-color: #db3955;
+    padding:.3em;
+    margin-left:3em;
+    margin-right:3em;
+    line-height:1;
+    border: 3px outset #dcb301;
+}
 
 /* Footer */
 
