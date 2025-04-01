@@ -5,26 +5,39 @@ body{
 }
 
 /* Header & Hero */
+
+header{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 #hero,footer{
     text-align:center;
-    background-color:#dbb355;
-    padding-left: 10px;
-    padding-right: 10px;
     border: 5px solid #db0201;
+}
+footer{
+    background-color:#dbb355;
+    margin-top: 1.3em;
 }
 
 #hero{
     margin-left:3em;
     margin-right:3em;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #hero div{
     background-color:#dbb355;
+    border: 5px solid #db0201;
 }
 
 #hero img{
     width:300px;
     max-width: 100%;
+    /*margin-bottom: 1.3em;*/
     border: 5px solid #db0201;
     background-color:#191110;
 }
@@ -34,7 +47,7 @@ body{
 }
 
 h1,h2,h4,h5,h6{
-    font-size: 45pt;
+    font-size: 35pt;
     text-align:center;
     background-color: #dbb355;
     padding:.3em;
@@ -47,7 +60,7 @@ h1,h2,h4,h5,h6{
 }
 
 h3{
-    font-size: 20pt;
+    font-size: 15pt;
     text-align:center;
     color: white;
     padding:.3em;
@@ -58,7 +71,15 @@ h3{
 
 /* Projects */
 #projects{
-    max-width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#projects img{
+    /*padding-left: 2em;
+    padding-right: 2em;*/
+    max-width: 80%;
 }
 
 #projects .project{
@@ -67,6 +88,16 @@ h3{
 
 /* Reviews */
 
+#reviews{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#reviews .review .name, #reviews .review .title{
+    font-weight: bold;
+}
+
 .review{
     font-size: 20pt;
     text-align:center;
@@ -74,11 +105,14 @@ h3{
     padding:.3em;
     margin-left:3em;
     margin-right:3em;
+    margin-bottom: 1.3em;
     line-height:1;
     border: 3px outset #dcb301;
 }
 
-/* Footer */
+.rating{
+    color:#dcb301;
+}
 
 
 /* Media state for Desktop site */
@@ -87,8 +121,38 @@ h3{
     /* Header & Hero */
 
     /* Projects */
-
+    #projects .project{
+        display:grid;
+        grid-template-columns: 4rem 1.5fr 1.5fr;
+    }
+    #projects .project img{
+        align-content: center;
+        justify-content: center;
+        margin-bottom:1em;
+        width:500px;
+        grid-column: 2;
+    }
+    #projects .project .description{
+        align-content: center;
+        justify-content: center;
+        width:100%;
+    }
+    h3{
+        font-size: 20pt;
+    }
     /* Reviews */
+    #reviews{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .review{
+        height: 100%;
+    }
+
+    h1,h2,h4,h5,h6{
+        font-size: 45pt;
+    }
 
     /* Footer */
 
